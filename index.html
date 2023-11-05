@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAYS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <h1>DAYS LEFT LIST</h1>
+            <div class="form-container">
+                <form name="inputs">
+                    <input type="date" pattern="\d{1,2}/\d{1,2}/\d{4}" id="date" name="date" value="">
+                    <input type="text" id="topic" name="topic">
+                    <input type="reset" value="Submit" id="btnsubmit" onclick="submitForm()">
+                </form>
+            </div>
+        </div>
+        <table id="myTable">
+            <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Days Left</th>
+            </tr>
+            <tr>
+                <td>07/11/23</td>
+                <td>Complete PID</td>
+                <td>999</td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
