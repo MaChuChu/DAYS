@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DAYS</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body onload="loadItems()">
     <div class="container">
         <div class="top">
             <h1>DAYS LEFT LIST</h1>
@@ -20,17 +21,13 @@
                     <input type="reset" value="Submit" id="btnsubmit" onclick="submitForm()">
                 </form>
             </div>
+            <button class="filter" onclick="filterClick()"><i class="fa fa-filter" aria-hidden="true"></i></button>
         </div>
         <table id="myTable">
             <tr>
                 <th>Date</th>
                 <th>Name</th>
                 <th>Days Left</th>
-            </tr>
-            <tr>
-                <td>07/11/23</td>
-                <td>Complete PID</td>
-                <td>999</td>
             </tr>
         </table>
     </div>

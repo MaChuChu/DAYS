@@ -49,6 +49,20 @@ input[type=reset] {
     cursor: pointer;
 }
 
+button {
+    margin-left: 18px;
+    max-width: 60px !important;
+    border-radius: 18px;
+    border: none;
+    font-size: 25px;
+}
+
+button:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+
 table {
     width: 800px;
     margin-top: 20px;
@@ -65,7 +79,9 @@ td {
 }
 
 tr:hover {
-    background-color: #A78295;
+    background-color: rgba(1, 1, 1, 0.5);
+    color: orange;
+    filter: brightness(75%);
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
@@ -76,6 +92,7 @@ td {
 }
 
 th {
+    background-color: rgba(11, 24, 34, 0.8);
     letter-spacing: 2px;
 }
 
